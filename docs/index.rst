@@ -11,6 +11,8 @@ This site captures prior mechanisms, software features, and season archives for 
    mechanisms/intake-pages/intake
    mechanisms/shooter
 
+.. toctree::
+   :maxdepth: 2
    :caption: Drivetrain
    drivetrain/drivetrain
 
