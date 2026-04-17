@@ -5,12 +5,6 @@ This site captures prior mechanisms, software features, and season archives for 
 
 .. toctree::
    :maxdepth: 2
-   :caption: Getting Started
-
-   getting-started
-
-.. toctree::
-   :maxdepth: 2
    :caption: Mechanisms
 
    mechanisms/climber
