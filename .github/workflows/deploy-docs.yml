@@ -1,0 +1,52 @@
+# Build Sphinx HTML and deploy to GitHub Pages on push to main.
+# Repo settings → Pages → Build and deployment → Source: GitHub Actions.
+name: Deploy docs to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Build Sphinx HTML
+        env:
+          SPHINX_HTML_BASEURL: https://gatorbotics1700.github.io/Team-Wiki/
+        run: sphinx-build -b html docs docs/_build/html
+
+      # Jekyll would skip _static, _sources, etc. without this.
+      - name: Add .nojekyll for GitHub Pages
+        run: touch docs/_build/html/.nojekyll
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs/_build/html
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

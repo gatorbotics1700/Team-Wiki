@@ -1,0 +1,66 @@
+/* Green accent overrides for the Read the Docs theme */
+:root {
+  --frc-green: #2e7d32;
+  --frc-green-dark: #1b5e20;
+  --frc-green-light: #e8f5e9;
+}
+
+.wy-side-nav-search,
+.wy-nav-top {
+  background: var(--frc-green);
+}
+
+.wy-menu-vertical a:hover,
+.wy-menu-vertical a:focus {
+  background-color: var(--frc-green-dark);
+}
+
+.wy-menu-vertical li.current > a,
+.wy-menu-vertical li.current > a:hover {
+  color: var(--frc-green-dark);
+}
+
+/* Sidebar section headers (were blue by default) */
+.wy-menu-vertical header,
+.wy-menu-vertical p.caption,
+.wy-menu-vertical p.caption-text,
+.wy-menu-vertical span.caption-text {
+  color: var(--frc-green) !important;
+}
+
+/* Admonitions and highlight accents */
+.rst-content .admonition-title,
+.rst-content .note .admonition-title,
+.rst-content .tip .admonition-title,
+.rst-content .seealso .admonition-title {
+  background: var(--frc-green);
+}
+
+/* Selected nav items */
+.wy-menu-vertical li.current a,
+.wy-menu-vertical li.toctree-l2.current > a,
+.wy-menu-vertical li.toctree-l3.current > a {
+  color: var(--frc-green-dark);
+}
+
+/* Search and form controls */
+input[type="text"]:focus,
+input[type="search"]:focus,
+textarea:focus,
+select:focus {
+  border-color: var(--frc-green);
+  box-shadow: 0 0 0 2px var(--frc-green-light);
+}
+
+/* RTD buttons/controls (default blue -> green) */
+.btn,
+.btn:hover,
+.btn:focus,
+.btn-info,
+.btn-info:hover,
+.btn-info:focus,
+.wy-dropdown .caret,
+.wy-inline-validate.wy-inline-validate-success .wy-input-context {
+  background-color: var(--frc-green);
+  border-color: var(--frc-green);
+}
