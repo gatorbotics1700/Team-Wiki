@@ -1,4 +1,4 @@
-Intake (2026)
+Four-Bar Intake (2026)
 =============
 
 The Intake continuously picks up fuel pieces and guides them into the powered
