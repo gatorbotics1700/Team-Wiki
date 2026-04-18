@@ -14,6 +14,7 @@ This site captures prior mechanisms, software features, and season archives for 
 .. toctree::
    :maxdepth: 2
    :caption: Drivetrain
+   
    drivetrain/drivetrain
 
 .. toctree::
