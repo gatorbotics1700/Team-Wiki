@@ -1,5 +1,5 @@
 Four-Bar Intake (2026)
-=============
+======================
 
 The Intake continuously picks up fuel pieces and guides them into the powered
 hopper floor transition. As a 4-bar linkage, it retracts upon impact.
