@@ -1,15 +1,28 @@
 Drivetrain
 ==============
 
-Overview
---------
+Drivetrain subsystems and related software. Open a hub below.
 
-Describe the drivetrain concept, goals, and constraints.
+.. grid:: 1 1 2 2
+   :gutter: 3
 
-Design Notes
-------------
+   .. grid-item-card:: Autonomous
+      :link: autonomous
+      :link-type: doc
 
-Outcomes
---------
+      Autonomous routines, path planning, and tuning notes.
 
-Capture performance observations, failures, and next iteration ideas.
+   .. grid-item-card:: Vision
+      :link: vision
+      :link-type: doc
+
+      Vision system design, calibration, and tracking notes.
+
+----
+
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+
+   autonomous
+   vision

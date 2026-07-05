@@ -13,14 +13,14 @@ Explore the wiki
       :link: mechanisms/index
       :link-type: doc
 
-      Intake, shooter, climber, and related hardware—open the mechanisms hub for
+      Mechanisms related software—open the mechanisms hub for
       all sub-categories.
 
    .. grid-item-card:: Drivetrain
       :link: drivetrain/drivetrain
       :link-type: doc
 
-      Drivetrain design, integration, and tuning notes.
+      Drivetrain, autonomous, and vision notes.
 
    .. grid-item-card:: Code
       :link: software/index
