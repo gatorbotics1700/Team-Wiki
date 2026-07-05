@@ -1,7 +1,5 @@
-:orphan:
-
-Season Template
-===============
+2027 Season
+===========
 
 Season Summary
 --------------
@@ -19,6 +17,6 @@ Subsystem Retrospective
 - Software and autonomy
 
 Carry-Forward Recommendations
------------------------------
+------------------------------
 
 List what the next season should reuse, revise, or retire.

@@ -6,4 +6,5 @@ Preserve season-by-season technical history.
 .. toctree::
    :maxdepth: 1
 
-   season-template
+   season-2026
+   season-2027
